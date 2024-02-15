@@ -87,7 +87,6 @@ header{
     width: 30vw;
     margin: 7rem 10%;
     padding: 20px;
-    max-height: 100%;
 }
 
 .main-text h1{
@@ -136,8 +135,10 @@ header{
 
 #sintomas{
     width: 100%;
-    height: 100%;
+    max-width: 100vw;
+    height: auto;
     margin: 0 auto;
+    padding: 20px;
     padding-bottom: 60px;
     display: flex;
     flex-direction: column;
@@ -263,18 +264,22 @@ header{
     width: 200px;
     height: 47px;
     text-align: center;
+    text-decoration: none;
     background-color: var(--color-secondary);
     color: white;
+    font-style: normal;
     font-family: var(--font-family-secondary);
     font-weight: 700;
     font-size: 21;
+    padding: 13px;
+    cursor: pointer;
 }
 
 footer{
     background-color: var(--color-secondary);
     width: 100%;
     margin: 0 auto;
-    padding: 40px;
+    padding: 20px 10%;
     display: flex;
     color: white;
 }
@@ -283,7 +288,24 @@ footer{
     display: flex;
     flex-direction: column;
     width: 33%;
-    align-items:;
+}
+
+.footer-list{
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer-list h2{
+    margin-bottom: 10px;
+}
+
+.footer-list li{
+    margin: 5px 0;
+}
+
+.footer-list a{
+    text-decoration: none;
+    color: white;
 }
 
 .redes-sociais{
@@ -298,7 +320,7 @@ footer{
 
 .redes-icon{
     display: flex;
-    padding: 20px;
+    padding: 20px 0;
     gap: 10%;
 }
 
@@ -306,6 +328,15 @@ footer{
     display: flex;
     flex-direction: column;
     width: 33%;
+}
+
+.contato h2{
+    margin-bottom: 10px;
+}
+
+.contato a{
+    margin: 10px 0;
+    color: white;
 }
 
 @media screen and (max-width: 730px){
