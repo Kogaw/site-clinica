@@ -216,13 +216,65 @@ header{
 .tratamentos-text p{
     margin: 20px 0;
     max-width: 500px;
-    padding: 5px;
 }
 
 .tratamentos-text ul{
     columns: 2  ;
+    list-style-type: none;
+    list-style-image: url("./img/checked-icon\ \(2\)\ \(1\).png");
+    list-style-position: inside;
 }
 
+.tratamentos-item{
+    font-family: var(--font-family-secondary);
+    font-weight: 500;
+    font-size: 21px;
+    margin: 20px 0;
+}
+
+#chamada{
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--color-primary);
+    text-align: center;
+    font-style: italic;
+}
+
+#chamada h2{
+    font-family: var(--font-family-primary);
+    font-weight: 900;
+    font-size: 32px;
+    padding: 70px 10px;
+    color: var(--color-secondary);
+}
+
+#chamada span{
+    font-weight: 500;
+}
+
+.button{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+.btn{
+    width: 200px;
+    height: 47px;
+    text-align: center;
+    background-color: var(--color-secondary);
+    color: white;
+    font-family: var(--font-family-secondary);
+    font-weight: 700;
+    font-size: 21;
+}
+
+footer{
+    background-color: var(--color-secondary);
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+}
 
 @media screen and (max-width: 730px){
     .nav-bar{
